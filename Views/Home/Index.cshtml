@@ -1,88 +1,244 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.title = "Home Page";
 }
 
 <html>
+<head>
+    <script src="~/scripts/jquery-3.4.1.min.js"></script>
+    <meta charset="utf-8">
+    <style>
+        /*.table_style {
+            width: 500px;
+            margin: 0px auto;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+
+            table tr td {
+                width: 50%;
+                border: 1px solid red;
+                padding: 10px;
+            }
+
+            table tr th {
+                border: 1px solid blue;
+                padding: 10px;
+                text-align: center;
+            }
+
+        .zebra {
+            background-color: #ff0066;
+        }*/
+
+        /*textarea{
+            display:block;
+        }*/
+
+        /*#nonSelected{
+            position: absolute;
+            top:10px;
+            left:10px;
+            width:180px;
+            height:180px;
+            background-color: #884333;
+            border-width:1px;
+            border-style:dotted;
+            border-color:black;
+            padding:10px;
+
+        }
+        #selected {
+            position: absolute;
+            top: 10px;
+            left: 200px;
+            width: 180px;
+            height: 180px;
+            background-color: #884333;
+            border-width: 1px;
+            border-style: dotted;
+            border-color: black;
+            padding: 10px;
+        }*/
+    </style>
+</head>
 <body>
-    @*<p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <p>Jquery</p>
-    <img src="~/img/WhatsApp Image 2022-03-14 at 01.13.40.jpeg" />
-    <a href="#top">Go top</a>*@
-    <input id="accept" type="checkbox" name="accept" value="elf" />Kabul Ediyorum <br />
-    <input id="submitbtn" type="submit" disabled name="acceptt" value="Gönder" />
+    @*<p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+        <p>jquery</p>
+
+        <img src="~/img/whatsapp ımage 2022-03-14 at 01.13.40.jpeg" />
+        <a href="#top">go top</a>
+        <input id="accept" type="checkbox" name="accept" value="elf" />kabul ediyorum <br />
+        <input id="submitbtn" type="submit" disabled name="acceptt" value="gönder" />
+        <p>benim adım <span class="blink">elf</span> barutçu</p>
+
+
+        <div class="table_style">
+            <table>
+                <tr>
+                    <th>öğrenci adı</th>
+                    <th>matematik notları</th>
+                </tr>
+                <tr>
+                    <td>elf</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>zehra</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>eda</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>ogün</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </div>*@
+
+    @*<a class="printPage "href="#">Print</a>*@
+
+    @*<label>Maksimum 15 karakter</label>
+        <textarea maxlength="15" id="textaream"></textarea>
+        <span id="kalankarakter">15</span>Karekter kaldı.*@
+
+    @*<div id="nonSelected">
+            <button id="btnDefault" onclick="moveButton(this)" type="button">Button1</button>
+            <button id="btnPrimary" onclick="moveButton(this)" type="button">Button2</button>
+            <button id="btnDanger" onclick="moveButton(this)" type="button">Button3</button>
+        </div>
+        <div id="selected">
+
+        </div>*@
+
+    @*<div id="header">
+            <ul>
+                <li><a href="https://www.google.com">C#</a></li>
+                <li><a href="https://www.google.com">C</a></li>
+            </ul>
+        </div>
+        <input type="button"  value="Yeni Ekle" onclick="new_element()" />*@
+
+
+
     <script>
-        //Scroll bar açılınca yavaşça yukarı kaydırma.
-        //$("a[href='#top']").click(function () {
-        //    $("html").animate({ scrollTop: 0 }, "slow");
-        //});
+                //scroll bar açılınca yavaşça yukarı kaydırma.
+                //$("a[href='#top']").click(function () {
+                //    $("html").animate({ scrolltop: 0 }, "slow");
+                //});
 
-        //Sağ tık yapılamaz hale getirme.
-        //$(document).bind("contextmenu", function (e) {
-        //    return false;
-        //})
+                //sağ tık yapılamaz hale getirme.
+                //$(document).bind("contextmenu", function (e) {
+                //    return false;
+                //})
 
-        //Resimi sağ tıklamanaz hale getirme
-        //$('body').on('contextmenu', 'img', function (e) {
-        //    return false;
-        //});
+                //resimi sağ tıklamanaz hale getirme
+                //$('body').on('contextmenu', 'img', function (e) {
+                //    return false;
+                //});
 
-        //Checkbox dolu olduğunda gönder butonu aktif boş olduğunda pasif olan yapı
-        //$('#accept').click(function () {
-        //    if ($('#submitbtn').is(':disabled')) {
-        //        $('#submitbtn').removeAttr('disabled')
-        //    }
-        //    else {
-        //        $('#submitbtn').attr('disabled','');
-        //    }
-        //});
+                //checkbox dolu olduğunda gönder butonu aktif boş olduğunda pasif olan yapı
+                //$('#accept').click(function () {
+                //    if ($('#submitbtn').is(':disabled')) {
+                //        $('#submitbtn').removeattr('disabled')
+                //    }
+                //    else {
+                //        $('#submitbtn').attr('disabled','');
+                //    }
+                //});
+
+                //bir yazı dizisi arasında ekrana girip çıkan kelime
+                //function blink_text() {
+                //    $('.blink').fadeout(500);
+                //    $('.blink').fadeın(500);
+                //}
+                //setınterval(blink_text, 3000)
+
+                //Tabloda zebra efekti kullanma
+                //$(document).ready(function () {
+                //    $("tr:even").addclass("zebra");
+                //});
+
+                //Sayfayı print etme
+                //$('a.printPage').click(function () {
+                //    window.print();
+                //    return false; //Diğer eventları engelle daha sağlıklı.
+                //});
+
+                //Karakter sayısı girişi sınırlı olan bir inputun altında maksimum kaç karakter daha girebileceği yazacak.
+                //var maxLength = 15;
+                //$('#textaream').keyup(function () {
+                //    var karaktersayisi = maxLength - $(this).val().length;
+                //    $('#kalankarakter').text(karaktersayisi);
+                //});
+
+                // 2 adet div elementinin içinde 3 buton var butona tıklandığında 2.divin içine geçsin tekrar tıklandığında 1.divin
+                //function moveButton(elf) {
+                //    if ($(elf).parent().attr("id") == "nonSelected") {
+                //        $(elf).detach().appendTo('#selected');
+                //    }
+                //    else {
+                //        $(elf).detach().appendTo('#nonSelected');
+                //    }
+                //}
+
+                ////Unordered(ul) list elemente list element ekleme
+                //function new_element() {
+                //    $("#header ul").append('<li>Jquery</li>')
+                //}
+
 
 
 
